@@ -2,7 +2,7 @@
 import React from "react";
 import DrawerTab from "./DrawerComponent";
 import { List } from "@phosphor-icons/react/dist/ssr";
-import { Grid } from "@mui/material";
+import { Badge, Grid, Typography } from "@mui/material";
 import { ShoppingBagOpen } from "@phosphor-icons/react";
 
 export default function Header() {
@@ -22,14 +22,19 @@ export default function Header() {
                 UserImage="https://randomuser.me"
                 userId={1}
             />
-            <div className="p-2 h-20 max-h-20" >
-                <Grid container p={2} alignItems={"center"}>
+            <Grid container direction={"row"} className="p-2 h-20 max-h-20" >
+                <Grid container item p={2} alignItems={"center"}>
                     <List size={36} onClick={handleDrawer} />
-                    <div className="justify-items-end">
-                        <ShoppingBagOpen size={32} />
+                    <div className="absolute right-14 p-2">
+                        <Badge max={99} badgeContent={10} color="error" >
+                            <ShoppingBagOpen size={32} />
+                        </Badge>
+                        <Typography>
+                            Olá user.name
+                        </Typography>
                     </div>
                 </Grid>
-            </div>
+            </Grid>
         </div>
     );
 }

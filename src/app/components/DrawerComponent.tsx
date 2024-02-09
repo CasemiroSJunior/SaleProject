@@ -1,7 +1,7 @@
 "use client";
 import { Avatar, Box, Button, Divider, Drawer, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material";
 import { Question } from "@phosphor-icons/react";
-import { CaretLeft, House, Package, SignOut } from "@phosphor-icons/react/dist/ssr";
+import { CaretLeft, Headset, House, Package, SignOut } from "@phosphor-icons/react/dist/ssr";
 import React from "react";
 import { DrawerTabProps } from "./interfaces/DrawerInterface";
 
@@ -11,7 +11,7 @@ export default function DrawerTab({ showDialog, setShowDialog, userName, UserIma
       <Grid className="bg-defaultComponentColor h-full w-full">
         <Grid container justifyContent={"end"} p={2} alignItems={"center"}>
           <Button onClick={setShowDialog}>
-            <CaretLeft size={32} color="white" className="fill-white"/>
+            <CaretLeft size={32} color="white" className="fill-white" />
           </Button>
         </Grid>
         <Grid
@@ -41,7 +41,7 @@ export default function DrawerTab({ showDialog, setShowDialog, userName, UserIma
               <ListItemIcon>
                 <House size={32} color="white" />
               </ListItemIcon>
-              <ListItemText className="text-white"  primary="Meu perfil" />
+              <ListItemText className="text-white" primary="Meu perfil" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -54,6 +54,12 @@ export default function DrawerTab({ showDialog, setShowDialog, userName, UserIma
                 <Question size={32} color="white" />
               </ListItemIcon>
               <ListItemText className="text-white" primary="Dúvidas" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Headset size={32} color="white" />
+              </ListItemIcon>
+              <ListItemText className="text-white" primary="Suporte" />
             </ListItem>
           </List>
         </Grid>

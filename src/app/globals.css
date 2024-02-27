@@ -4,15 +4,15 @@
 
 :root {
   --foreground: #000000;
-  --background-start: rgb(105 60 235);
-  --background-end: rgb(29 241 241);
+  --background-start: smoke;
+  --background-end: smoke;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #ffffff;
-    --background-end: rgb(105 60 235);
-    --background-start: rgb(29 241 241);
+    --background-start: smoke;
+  --background-end: smoke;
   }
 }
 

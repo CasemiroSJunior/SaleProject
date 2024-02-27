@@ -20,7 +20,15 @@ const config: Config = {
         "100vh": "100vh"
       },
       colors:{
-        "defaultComponentColor": "#501A95"
+        "themeBackground": "#024959",
+        "themeGray": "#A1A2A6",
+        "themeLightGray": "#E4E4E4",
+        "themeYellow": "#F2C12E",
+        "themeYellowDark": "#F2AE30",
+        "themeBrown": "#593E25",
+        "themeLightBrown": "#AE733E",
+        "themeChestnutBrown": "#954535",
+        "themeLightPurple": "#D9C8FA",
       }
     },
   },
